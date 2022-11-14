@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vrWJrv2opTq6hxZHuIJsDW0hecTkxd3sTiXOlsDuxNnP2/jvEgMlxOekEhgLDCA24qcGjCXxR5gBpgKgS/OYxg==",
+  "dgSpecHash": "QMW7z1BjVjCQy1hJHUKwP0ucRtiGQeHdbwfm77Uf/dRD/05cPabukkOi/8bZEXoiHgnbn4bppyff3pqw+jRuZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\agust\\OneDrive\\Desktop\\Bingo\\Bingo\\Bingo.csproj",
+  "projectFilePath": "C:\\Users\\agust\\source\\bingo-incluit\\Bingo\\Bingo\\Bingo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\agust\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\agust\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",

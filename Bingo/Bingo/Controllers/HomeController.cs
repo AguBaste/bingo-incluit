@@ -26,7 +26,7 @@ namespace Bingo.Controllers
             return View(carton);
         }
 
-        public IActionResult Jugar()
+        public IActionResult Crear()
         {
             var rule = new CartonRules();
             var carton = rule.Crear();
