@@ -1,7 +1,7 @@
 ﻿
 
 let parrafo = document.getElementById('parrafo');
-
+const btn = document.getElementById('sortear');
 const numeros = [];
 
 for (let index = 0; index < 90; index++) {
@@ -13,10 +13,11 @@ let indice = 0;
 
 function Sorteo() {
   while (indice < 90) {
-    parrafo.innerHTML = numeros[indice];
+    parrafo.innerHTML += numeros[indice] + " - ";
     indice++;
     return numeros[indice];
   }
-  parrafo.innerHTML = "Se acabaron los numeros";
+  parrafo.innerHTML += "Se acabaron los numeros";
+  btn.disabled = true;
 }
 console.log(numeros);

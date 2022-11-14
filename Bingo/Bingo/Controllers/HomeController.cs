@@ -17,8 +17,6 @@ namespace Bingo.Controllers
             _logger = logger;
         }
 
-
-
         public IActionResult Index()
         {
             var rule = new CartonRules();
@@ -26,21 +24,6 @@ namespace Bingo.Controllers
             return View(carton);
         }
 
-        public IActionResult Crear()
-        {
-            var rule = new CartonRules();
-            var carton = rule.Crear();
-            ViewBag.carton = carton;
-            return View("Index",carton);
-        }
-
-        public  IActionResult Sortear()
-        {
-            Random ran = new Random();
-            var numero = ran.Next(1,91);
-            ViewBag.numero = numero;
-            return View("Index");
-        }
         public IActionResult Privacy()
         {
             return View();
