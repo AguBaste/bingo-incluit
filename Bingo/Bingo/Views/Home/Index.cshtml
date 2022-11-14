@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Bingo";
+    ViewData["Numero"] = ViewBag.numero;
+}
+@model Carton
+<div class="text-center">
+    <h1 class="display-4">Bingo</h1>
+</div>
+<div class="d-flex justify-content-sm-evenly mb-4">
+    <a class="btn btn-primary text-uppercase" id="sortear" onclick="Sorteo()">Sortear numero</a>
+    <a class="btn btn-primary text-uppercase" asp-action="Jugar" asp-controller="Home">Crear carton</a>
+</div>
+<p class="text-danger" id="parrafo"></p>  
+<table class="table text-xl-center">
+    @for (int f = 0; f < 3; f++)
+    {   
+        <tr class="row col-6">
+            @for (int c = 0; c < 9; c++)
+            {
+                <td class="col bg-info text-light">
+                    @Model.Numeros[c,f]
+                </td>
+            }
+        </tr>
+    }
+</table>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
