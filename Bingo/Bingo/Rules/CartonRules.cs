@@ -5,7 +5,7 @@ namespace Bingo.Rules
     public class CartonRules
     {
         public Carton Crear()
-        {
+       {
             Carton  carton = new();
             Random genRandom = new Random();
             carton.Numeros = new int[9, 3];
